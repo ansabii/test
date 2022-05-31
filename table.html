@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            display: flex;
+            flex-flow: row wrap;
+            width: 600px;
+            height: 300px;
+            text-align: center;
+        }
+
+        .cell-1,
+        .cell-2,
+        .cell-3 {
+            flex: 1 0 200px;
+            height: 100px;
+        }
+
+        .cell-4 {
+            height: 100px;
+            width: 200px;
+        }
+
+        .row {
+            display: flex;
+            flex-flow: row wrap;
+            width: 400px;
+            height: 100px;
+        }
+
+        .cell-5,
+        .cell-6,
+        .cell-7,
+        .cell-8 {
+            flex: 1 0 200px;
+            max-width: 200px;
+            height: 50px;
+        }
+
+        .cell-9 {
+            width: 600px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cell-1" style="background-color: aqua;">Column1</div>
+        <div class="cell-2" style="background-color: yellow;">Column2</div>
+        <div class="cell-3" style="background-color: rgb(255, 0, 0);">Column3</div>
+        <div class="cell-4" style="background-color: rgb(255, 174, 0);">Row1 Cell1</div>
+        <div class="row">
+            <div class="cell-5" style="background-color: rgb(89, 0, 255);">Row1 Cell2</div>
+            <div class="cell-6" style="background-color: aqua;">Row1 Cell3</div>
+            <div class="cell-7" style="background-color: rgb(34, 255, 0);">Row2 Cell2</div>
+            <div class="cell-8" style="background-color: rgb(255, 0, 162);">Row2 Cell3</div>
+        </div>
+        <div class="cell-9" style="background-color: rgb(0, 30, 255);">Row1 Cell3</div>
+    </div>
+</body>
+
+</html>
